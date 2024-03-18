@@ -72,7 +72,6 @@ void PhoneBook::searchContact() {
     int index_num;
     int i;
 
-	i = 0;	
     if (contacts[0].getName().empty()) {
         std::system("clear");
 	    std::cout << TEXT_RED;
@@ -84,6 +83,7 @@ void PhoneBook::searchContact() {
         return ;
     }
 	while (!std::cin.eof()) {
+		i = 0;	
     	std::system("clear");
     	std::cout << TEXT_GREEN;
 		std::cout << "        ┌───────────────────────┐" << std::endl;
